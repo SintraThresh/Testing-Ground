@@ -25,7 +25,7 @@ Sequence_Selected = int(Sequence_Selected)
 
 if Sequence_Selected == 1:
     antiprime_sequence()
-elif Sequence_Selected == 2
+elif Sequence_Selected == 2:
 else:
     print("Please select a valid number option")
     
