@@ -20,12 +20,28 @@ def antiprime_sequence():
             print(str(Current_term) + ':' + str(compositeLongName))
         compositeLongName = 0
 
-Sequence_Selected = input("Which Math Sequence would you like?\n   1. Anti-Prime Sequence: ")
-Sequence_Selected = int(Sequence_Selected)
+def van_eck_Sequence():
+    UserNum = input('Enter number: ')
+    highest_number = 0
+    current_number = 0
+    main_array = [0]
+    cycle = 0
+    while UserNum != cycle:
+        if current_number > highest_number:
+            highest_number = current_number
+        if main_array[current_number] == '0':
+            main_array[current_number] = main_array[current_number] + 1
+        print(current_number)
 
-if Sequence_Selected == 1:
+
+
+sequence_selected = input("Which Math Sequence would you like?\n   1. Anti-Prime Sequence: ")
+sequence_selected = int(sequence_selected)
+
+if sequence_selected == 1:
     antiprime_sequence()
-elif Sequence_Selected == 2:
+elif sequence_selected == 2:
+    van_eck_Sequence()
 else:
     print("Please select a valid number option")
     
