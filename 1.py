@@ -1,8 +1,6 @@
-UserInput = input('chose a number:')
-
 Sum = 0
 counter = 0
-while counter < int(UserInput):
+while counter < 1000:
     if counter % 3 == 0:
         Sum = Sum + counter
     elif counter % 5 == 0:
