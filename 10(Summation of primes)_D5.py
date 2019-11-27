@@ -1,10 +1,12 @@
-n = 3
-number = 0
-while n < 2000000:
-    for i in range(2,int(n**0.5) + 1):
-        if (n % i) == 0:
-            break
-    else:
-        number += n
-    n+=2
-print(number + 2)
+n = 2000000
+total = 0
+primeArray = [True] * n
+for i in range(2,n):
+    if primeArray[i]:
+        currentNum = i
+        total += i
+        currentNum = currentNum**2
+        while currentNum < n:
+            primeArray[currentNum] = False
+            currentNum += i
+print(str(total))
