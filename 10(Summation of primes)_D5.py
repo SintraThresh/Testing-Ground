@@ -1,20 +1,10 @@
-#QUARITINE -DO NOT TOUCH- WE HAVE NO IDEA HOW WE MADE IT WORK
-import math
-numInput = 2000000
-cycle = 1
-start = 1
+n = 3
 number = 0
-i = 2
-while cycle < numInput:
-    start +=1
-    sqrt_start = math.sqrt(start)
-    i = 2
-    while i < sqrt_start + 1:
-        if start != i:
-            if (start % i) == 0:
-                break
-        i += 1
+while n < 2000000:
+    for i in range(2,int(n**0.5) + 1):
+        if (n % i) == 0:
+            break
     else:
-        number += start
-    cycle+=1
-print(number)
+        number += n
+    n+=2
+print(number + 2)
