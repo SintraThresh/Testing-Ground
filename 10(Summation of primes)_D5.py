@@ -1,16 +1,18 @@
 import math
-numInput = 2000000
+numInput = 20
 cycle = 1
 start = 1
 number = 0
+i = 2
 while cycle < numInput:
     start +=1
     sqrt_start = math.sqrt(start)
-    sqrt_start = int(sqrt_start)
-    for i in range(2, sqrt_start):          
-        if start != i: 
+    i = 2
+    while i < sqrt_start + 1:
+        if start != i:
             if (start % i) == 0:
                 break
+        i += 1
     else:
         number += start
     cycle+=1
