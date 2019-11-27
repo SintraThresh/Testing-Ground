@@ -1,5 +1,6 @@
+#QUARITINE -DO NOT TOUCH- WE HAVE NO IDEA HOW WE MADE IT WORK
 import math
-numInput = 20
+numInput = 2000000
 cycle = 1
 start = 1
 number = 0
@@ -16,4 +17,4 @@ while cycle < numInput:
     else:
         number += start
     cycle+=1
-print('big nibba' + str(number))
+print(number)
