@@ -1,4 +1,4 @@
-uInput = input('Enter number: ')
+uInput = 100
 
 n = 1
 numSum = 0
