@@ -1,5 +1,4 @@
-uInput = input('Enter number: ')
-numInput = int(uInput)
+numInput = 10001
 cycle = 1
 start = 1
 while cycle <= numInput:
