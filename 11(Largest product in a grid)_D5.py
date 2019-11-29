@@ -19,7 +19,7 @@ for i in range(1,400):
     else:
         counter +=1
     center +=1
-    check = position(center)
+    
     # -x axis
     if counter > 2:
         L_product = (position(center) * position(center - 1) * position(center - 2) * position(center - 3))
