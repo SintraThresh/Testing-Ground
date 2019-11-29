@@ -19,6 +19,7 @@ for i in range(1,400):
     else:
         counter +=1
     center +=1
+    check = position(center)
     # -x axis
     if counter > 2:
         L_product = (position(center) * position(center - 1) * position(center - 2) * position(center - 3))
@@ -39,8 +40,6 @@ for i in range(1,400):
 
     # -y axis
     if center < 340:
-        offset = center
-        offset += 20
         B_product = (position(center) * position(center + 20) * position(center + 40) * position(center + 60))
         if B_product > highestProd:
             highestProd = B_product
@@ -59,17 +58,14 @@ for i in range(1,400):
 
     # Diagonal Bottom Left
     if center < 340 and counter > 2:
-        offset = center
-        offset += 20
-        BL_product = (position(center) * position(offset - 1) * position(offset + 18) * position(offset + 37))
+        BL_product = (position(center) * position(center + 19) * position(center + 38) * position(center + 57))
         if BL_product > highestProd:
             highestProd = BL_product
 
     # Diagonal Bottom Right
     if center < 340 and counter < 17:
-        offset = center
-        offset += 20
-        BL_product = (position(center) * position(offset + 1) * position(offset + 22) * position(offset + 43))
+        BL_product = (position(center) * position(center + 21) * position(center + 42) * position(center + 63))
         if BL_product > highestProd:
-            highestProd = BL_product       
+            highestProd = BL_product  
+            
 print(highestProd)
