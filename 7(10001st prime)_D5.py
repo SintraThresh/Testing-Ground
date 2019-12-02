@@ -1,4 +1,3 @@
-import math
 numInput = 10001
 cycle = 1
 start = 1
