@@ -25,7 +25,6 @@ for(cycle = 0; cycle<numberCube.length;){
     var string = "";
     for(i = 0; i<13;){
         sum *= numberCube[cycle+i];
-        string = string.concat(numberCube[cycle+i]);
         i++;
     }
     cycle++;
