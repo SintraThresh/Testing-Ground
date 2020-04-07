@@ -14,4 +14,3 @@ for i in range(1,1000000,2):
         winnersName = n
     counter = 0
 print(winnersName,": with a chain length of :",winnersTotal)
-#this is just a test of git syncs
